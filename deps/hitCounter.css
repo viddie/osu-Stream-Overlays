@@ -1,0 +1,55 @@
+/*
+Testing purposes
+html, body {
+	width: 300px;
+	height: 50px;
+}
+*/
+
+#hitPanel {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#hitPanel > #valuesRow > * {
+	width: 60px;
+	text-align: center;
+	margin: 5px;
+	text-shadow: 0 0 5px black;
+}
+#hitPanel > #barRow, #hitPanel > #valuesRow {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#hitPanel td {
+	padding: 5px;
+}
+
+.hitBar {
+	width: 60px;
+	height: 5px;
+	border-radius: 99px;
+}
+.hitBar.red {
+	background: #aa0000;
+	box-shadow: 0 0 7px #aa0000;
+}
+.hitBar.blue {
+	background: #0000aa;
+	box-shadow: 0 0 7px #0000aa;
+}
+.hitBar.green {
+	background: #00aa00;
+	box-shadow: 0 0 7px #00aa00;
+}
+.hitBar.sliderBreak {
+	background: transparent;
+	border: 1px solid white;
+}

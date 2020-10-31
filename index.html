@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>yep 1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="deps/main.css">
+</head>
+
+<body>
+	<div id="hpBarOuter">
+		<div id="hpBarInner"></div>
+	</div>
+	
+	<div id="hitPanel">
+		<div id="valuesRow">
+			<span id="h100">0</span>
+			<span id="h50">0</span>
+			<span id="h0">0</span>
+			<span id="hSliderbreaks">0</span>
+		</div>
+		<div id="barRow">
+			<div class="hitBar green"></div>
+			<div class="hitBar blue"></div>
+			<div class="hitBar red"></div>
+			<div class="hitBar sliderBreak"></div>
+		</div>
+	</div>
+	
+	<div id="ppPanel">
+		<span id="ppSS">417</span>
+		<div id="ppBarBackground">
+			<div id="ppBarCurrent" class="ppBarForeground" style="height: 10%;">
+				<div class="bar">
+					<span id="ppCurrent" class="left">41</span>
+				</div>
+			</div>
+			<div id="ppBarMaxThisPlay" class="ppBarForeground" style="height: 86%;">
+				<div class="bar">
+					<span id="ppMaxThisPlay" class="right">351 <span class="label">Max</span></span>
+				</div>
+			</div>
+			<div id="ppBarIfFc" class="ppBarForeground" style="height: 95%;">
+				<div class="bar">
+					<span id="ppIfFc" class="right">378 <span class="label">FC</span></span>
+				</div>
+			</div>
+			<div id="ppBar99" class="ppBarForeground" style="height: 95%;">
+				<div class="bar acc">
+					<span class="center"><span class="label small">99</span></span>
+				</div>
+			</div>
+			<div id="ppBar98" class="ppBarForeground" style="height: 95%;">
+				<div class="bar acc">
+					<span class="center"><span class="label small">98</span></span>
+				</div>
+			</div>
+			<div id="ppBar97" class="ppBarForeground" style="height: 95%;">
+				<div class="bar acc">
+					<span class="center"><span class="label small">97</span></span>
+				</div>
+			</div>
+			<div id="ppBar95" class="ppBarForeground" style="height: 95%;">
+				<div class="bar acc">
+					<span class="center"><span class="label small">95</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--<div id="hitPanel">
+		<table>
+			<tr>
+				<td><span id="h100"></span></td>
+				<td><span id="h50"></span></td>
+				<td><span id="h0"></span></td>
+				<td><span id="hSliderbreaks"></span></td>
+			</tr>
+			<tr>
+				<td><div class="hitBar green"></div></td>
+				<td><div class="hitBar blue"></div></td>
+				<td><div class="hitBar red"></div></td>
+				<td><div class="hitBar sliderBreak"></div></td>
+			</tr>
+		</table>
+	</div>-->
+	
+	<div id="mainPanel" style="visibility: hidden;">
+		<div id="infoPanel">
+			<h3>Play Info</h3>
+			<hr>
+
+			<h3>PP</h3>
+			<!--SS: <span id="ppSS"></span><br>
+			PP if FC: <span id="ppIfFc"></span><br>
+			Max PP this play: <span id="ppMaxThisPlay"></span><br>
+			Current PP: <span id="ppCurrent"></span><br>-->
+			<hr>
+			
+			<h3>Hits</h3>
+			<!--100's: <span id="h100"></span><br>
+			50's: <span id="h50"></span><br>
+			Misses: <span id="h0"></span><br>
+			Sliderbreaks: <span id="hSliderbreaks"></span><br>-->
+			<hr>
+			
+			<h3>Other</h3>
+			UR: <span id="ur"></span><br>
+			Grade now: <span id="gradeNow"></span><br>
+			Grade max: <span id="gradeMax"></span><br>
+			HP (normal): <span id="hpNormal"></span><br>
+			HP (smooth): <span id="hpSmooth"></span><br>
+			<hr>
+			
+			<p id="all"></p>
+		</div>
+	</div>
+	
+	
+	
+	<script src="deps/reconnecting-websocket.min.js"></script>
+	<script src="deps/countUp.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>

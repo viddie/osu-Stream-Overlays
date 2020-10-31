@@ -1,0 +1,17 @@
+#hpBarOuter {
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: calc(100% - 50px);
+	/*background: #333333;*/
+	background-image: linear-gradient(90deg, #da1616, #d1f50c, #3ad427);
+	transition: transform .4s, top .4s;
+}
+#hpBarInner {
+	position: absolute;
+	right: 0;
+	width: 10%;
+	height: 100%;
+	background: #333333;
+	transition: width .4s;
+}
