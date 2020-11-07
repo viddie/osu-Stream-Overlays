@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>yep 1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="deps/all.css">
+	<link rel="stylesheet" href="deps/simpleMapStats.css">
+</head>
+
+<body>
+	<div id="mapStatsContainer">
+		<div class="mapStatsContainerInner">
+			<span>Stars <span id="starsNow" class="value"></span>/<span id="starsMax" class="value"></span></span>
+			<span></span>
+			<span>CS <span id="cs" class="value"></span></span>
+			<span></span>
+			<span>AR <span id="ar" class="value"></span></span>
+			<span></span>
+			<span>OD <span id="od" class="value"></span></span>
+			<span></span>
+			<span>HP  <span id="hp" class="value"></span></span>
+		</div>
+		<div class="mapStatsContainerInner">
+			<span>Duration <span id="time" class="value"></span></span>
+			<span></span>
+			<span>BPM <span id="bpm" class="value"></span></span>
+		</div>
+		<div class="mapStatsContainerInner">
+			<span class="text-center"><span id="song" class="value"></span></span>
+		</div>
+	</div>
+	
+	<script src="deps/util.js"></script>
+	<script src="deps/reconnecting-websocket.min.js"></script>
+	<script src="deps/countUp.js"></script>
+	<script src="simpleMapStats.js"></script>
+</body>
+
+</html>

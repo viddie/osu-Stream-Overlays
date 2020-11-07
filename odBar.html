@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Map Diff Display</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="deps/all.css">
+	<link rel="stylesheet" href="deps/odBar.css">
+</head>
+
+<body>
+	<div id="outerContainer">
+		<div id="odBarContainer">
+			<div id="outerOdBar">
+				<div id="odBar50" class="odBar"></div>
+				<div id="odBar100" class="odBar"></div>
+				<div id="odBar300" class="odBar"></div>
+				<div id="odBarCenter" class="odBar" ></div>
+			</div>
+		</div>
+		<div id="urContainer">
+			<div id="urInfoContainer" class="odBar">
+				<span id="perfectHits">0</span>
+				<span id="ur">0</span>
+				<span id="perfectHitsInRow">0</span>
+			</div>
+		</div>
+	</div>
+	
+	<script src="deps/util.js"></script>
+	<script src="deps/reconnecting-websocket.min.js"></script>
+	<script src="deps/CountUp.js"></script>
+	<script src="odBar.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*
+*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+#mapStatsContainer {
+	width: 100%;
+	height: 100%;
+	
+	font-size: 4vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mapStatsContainerInner {
+	width: 100%;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+
+.mapStatsContainerInner .value {
+	font-weight: bold;
+}

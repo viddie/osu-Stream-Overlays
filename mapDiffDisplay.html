@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Map Diff Display</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="deps/all.css">
+	<link rel="stylesheet" href="deps/mapDiffDisplay.css">
+</head>
+
+<body>
+	<div class="diffBarContainer">
+		<span>CS</span>
+		<span class="spacing"></span>
+		<div class="diffBarOuter red">
+			<div id="csBar" class="diffBarInner" style="width:40%;"></div>
+		</div>
+		<span class="spacing"></span>
+		<span id="csValue">4</span>
+	</div>
+	
+	<div class="diffBarContainer">
+		<span>AR</span>
+		<span class="spacing"></span>
+		<div class="diffBarOuter yellow">
+			<div id="arBar" class="diffBarInner" style="width:93%;"></div>
+		</div>
+		<span class="spacing"></span>
+		<span id="arValue">9.3</span>
+	</div>
+	
+	<div class="diffBarContainer">
+		<span>OD</span>
+		<span class="spacing"></span>
+		<div class="diffBarOuter blue">
+			<div id="odBar" class="diffBarInner" style="width:90%;"></div>
+		</div>
+		<span class="spacing"></span>
+		<span id="odValue">9</span>
+	</div>
+	
+	<div class="diffBarContainer">
+		<span>HP</span>
+		<span class="spacing"></span>
+		<div class="diffBarOuter green">
+			<div id="hpBar" class="diffBarInner" style="width:80%;"></div>
+		</div>
+		<span class="spacing"></span>
+		<span id="hpValue">8</span>
+	</div>
+	
+	<div class="diffBarContainer">
+		<span>Stars</span>
+		<span class="spacing"></span>
+		<div class="diffBarOuter white">
+			<div id="starBar" class="diffBarInner" style="width:80%;"></div>
+		</div>
+		<span class="spacing"></span>
+		<span id="starValue">8</span>
+	</div>
+	
+	<script src="deps/util.js"></script>
+	<script src="deps/reconnecting-websocket.min.js"></script>
+	<script src="deps/CountUp.js"></script>
+	<script src="mapDiffDisplay.js"></script>
+</body>
+</html>

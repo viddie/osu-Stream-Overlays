@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Map Diff Display</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="deps/util.js"></script>
+	<script src="deps/reconnecting-websocket.min.js"></script>
+	<script src="deps/CountUp.js"></script>
+	<link rel="stylesheet" href="deps/all.css">
+	<link rel="stylesheet" href="deps/totalPPDisplay.css">
+</head>
+
+<body>
+	<div id="totalPPContainer">
+		<div id="totalPPInnerContainer">
+			<span id="totalPP">XXX.XXXpp</span>
+			<span id="ppDiff">(+0pp)</span>
+		</div>
+	</div>
+	<span id="topRank" class="none">&gt;#100</span>
+	<script src="totalPPDisplay.js"></script>
+</body>
+</html>
