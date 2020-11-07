@@ -1,5 +1,5 @@
-let fetchUrlScores = "https://osu.ppy.sh/api/get_user_best?k=a05c729600d6f4799301d4c898e9ed998eeb2916&u={user}&limit=100";
-let fetchUrlProfile = "https://osu.ppy.sh/api/get_user?k=a05c729600d6f4799301d4c898e9ed998eeb2916&u={user}&limit=100";
+let fetchUrlScores = "https://osu.ppy.sh/api/get_user_best?k={apiKey}&u={user}&limit=100";
+let fetchUrlProfile = "https://osu.ppy.sh/api/get_user?k={apiKey}&u={user}&limit=100";
 
 
 
@@ -64,6 +64,10 @@ let currentBonusPP = -1;
 function onNewPlay(data){
 	let fetchUrlScoresReplaced = fetchUrlScores.replace("{user}", data.gameplay.name);
 	let fetchUrlProfileReplaced = fetchUrlProfile.replace("{user}", data.gameplay.name);
+	
+	//Add api key defined in deps/secret.js
+	fetchUrlScoresReplaced = fetchUrlScoresReplaced.replace("{apiKey}", apiKey);
+	fetchUrlProfileReplaced = fetchUrlProfileReplaced.replace("{apiKey}", apiKey);
 	
 	let p1 = fetch(fetchUrlScoresReplaced).then(response => response.json().then(json => { bestScores = json; }));
 	let p2 = fetch(fetchUrlProfileReplaced).then(response => response.json().then(json => { profile = json[0]; }));
