@@ -1,1 +1,3 @@
-let apiKey = "<your-api-key-here>";
+let secret = {
+	apiKey: "<your-api-key-here>",
+};
